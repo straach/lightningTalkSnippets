@@ -34,9 +34,9 @@ describe('AnswerController', function() {
 
         // Arrange
         rrule.getAllOccurrences().returns(['2016-05-05', '2016-05-06', '2016-05-07']);
-        moment('2016-05-05').getNameInEnglish().returns('Saturday');
-        moment('2016-05-06').getNameInEnglish().returns('Sunday');
-        moment('2016-05-07').getNameInEnglish().returns('Monday');
+        moment('2016-05-05').getNameInEnglish().returns('Friday');
+        moment('2016-05-06').getNameInEnglish().returns('Saturday');
+        moment('2016-05-07').getNameInEnglish().returns('Sunday');
         assignToPatients.save().returns(true); // always
 
         // Act
